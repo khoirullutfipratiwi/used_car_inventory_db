@@ -33,19 +33,16 @@ INSERT INTO bid_status_log(bid_detail_id, bid_id, label, created_at)
 ----------------------------------------------------------------------------------------------------------------------------------
 -- 3. Melihat semua mobil yg dijual 1 akun dari yg paling baru
 
-SELECT	
-	car_id, 
-	name,
-	brand,
-	model,
-	created_at
+SELECT user_id, 
+  name,
+  brand,
+  model
 FROM advertisements
-JOIN bids USING(advertisements_id)
-JOIN bid_details USING(bid_id)
-WHERE CONCAT(first_name, ' ', last_name) = 'Titi Anggriawan'
-GROUP BY user_id, full_name, brand, model, created_at
-ORDER BY created_at DESC;
-
+JOIN cars USING(car_id)
+JOIN users USING(user_id)
+GROUP BY user_id, name, brand, model
+ORDER BY user_id DESC
+LIMIT 1;
 
 
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -58,7 +55,7 @@ SELECT
 	year,
 	price
 FROM product
-WHERE model ILIKE '%Agya%'
+WHERE model ILIKE '%Toyota%'
 ORDER BY price ASC
 LIMIT 1;
 
