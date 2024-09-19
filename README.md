@@ -1,22 +1,21 @@
-# Database Marketplace Mobil Bekas
+# Used Car Inventory Database
 
-Membuat database untuk sebuah project atau aplikasi dan memahami proses retrieval data adalah salah satu tugas dari Software & Data Engineering. Maka dari itu, project ini bertujuan untuk membangun relational database sebuah website yang menawarkan penjualan mobil bekas. Website dapat menawarkan produknya (mobil bekas) dalam bentuk iklan dan calon pembeli dapat melakukan pencarian berdasarkan beberapa kategori. 
+Building a database for a project or application and understanding data retrieval processes is a core task in Software & Data Engineering. This project aims to construct a relational database for a website that offers used car sales. The website will showcase products (used cars) in the form of advertisements, allowing potential buyers to search based on various categories.
 
 ## Features and Limitations
-1. Setiap user aplikasi dapat menawarkan lebih dari satu produk mobil bekasnya.
-2. Sebelum menjual produk mobil, user harus melengkapi data dirinya terlebih dahulu, seperti nama, kontak, dan domisili lokasi.
-3. User menawarkan produknya melalui iklan yang akan ditampilkan oleh website.
-4. Iklan ini berisikan judul, detail informasi produk yang ditawarkan, serta kontak penjual.
-5. Beberapa informasi yang harus ditulis dalam iklan adalah sebagai berikut
-    - merek mobil: Toyota, Daihatsu, Honda, dll
-    - Model: Toyota Camry, Toyota Corolla Altis, Toyota Vios,Toyota Camry Hybrid, dll
-    - Jenis body mobil: MPV, SUV, Van, Sedan, Hatchback, dll
-    - Tipe mobil: manual atau automatic
-    - Tahun pembuatan mobil: 2005, 2010, 2011, 2020 
-6. Setiap user bisa mencari mobil yg ditawarkan berdasarkan lokasi user penjual, merk mobil, dan jenis body mobil.
-7. Jika calon pembeli tertarik terhadap sebuah mobil, ia dapat menawar (bid) harga produk jika penjual mengizinkan fitur tawar. 
-8. Transaksi pembelian dilakukan di luar aplikasi sehingga tidak dalam scope project
+1. Users can list multiple used cars for sale.
+2. Before listing a car, users must provide their personal details, including name, contact information, and location.
+3. Users will list their cars through advertisements on the website.
+4. Each listing will include a title, detailed vehicle information, and the seller's contact details.
+5. Required listing information includes:
+    - Brand: Toyota, Daihatsu, Honda, etc.
+    - Model: Toyota Camry, Toyota Corolla Altis, Toyota Vios, Toyota Camry Hybrid, etc.
+    - Body style: MPV, SUV, Van, Sedan, Hatchback, etc.
+    - Transmission: manual or automatic
+    - Year: 2005, 2010, 2011, 2020
+6. Users can search for cars based on location, make, and body style.
+7. If a buyer is interested, they can make an offer on the car if the seller has enabled the bidding feature.
+8. The actual transaction will occur outside of the application and is not within the scope of this project.
 
 ## Outcome
-Keluaran dari project ini adalah relational database yang sesuai dengan features dan limitations. Adapun beberapa langkah dalam perancangan database yaitu mission statement, creating table structures, determine table relationships, determine business rules, dan implementing a relational database. Selanjutnya akan dibuat dummy dataset untuk setiap tabel dan dilakukan query untuk menganalisis beberapa aspek dari database. Query terdiri dari transactional dan analytical query.
-
+The project output is a relational database designed to meet the specified features and constraints. The database design process involves defining a mission statement, creating table structures, determining table relationships, identifying business rules, and implementing a relational database. Subsequently, dummy datasets will be generated for each table and queries will be executed to analyze various aspects of the database. These queries will include both transactional and analytical queries.
